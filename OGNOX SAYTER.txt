@@ -3,3 +3,6 @@ https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_transform-style
 
 https://htmlreference.io/forms/ 
 https://html5book.ru/html5-forms
+
+// es sayti Image hovery sarqi!
+http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html

@@ -1,23 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;1,300&display=swap');
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Source Sans Pro',
+	sans-serif;
 }
 
-h1 {
-	display: inline-block;
+section.main {
+	width: 100%;
+	height: 100vh;
+	background: url("../apartment.jpg");
+	background-size: cover;
+	background-position: top center;
+	background-repeat: no-repeat;
 }
 
-p {
-	display: inline-block;
-	width: 500px;
-	background-color: rgb(185, 131, 131);
+header {
+	height: 10vh;
+}
+
+nav {
+	width: 60%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+nav img {
+	position: relative;
+	left: 40px;
+	top: 5px;
+}
+nav ul li {
 	font-size: 20px;
+	cursor: pointer;
+	position: relative;
 }
-img{
-	height: 450px;
-	width: 350px;
+nav ul{
+	margin-left: auto;
+	width: 80%;
+	min-width: 550px;
+	padding: 10px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	list-style: none;
 }
-.box{
-	background-color: rgba(15, 156, 90, 0.637);
+nav ul li a {
+	text-decoration: none;
+	color: #333;
+	font-variant: small-caps;
+	text-transform: lowercase;
+}
+a:hover{
+	color: #82BEE3;
+	transition: 0.3s;
+}
+a:hover::before {
+	content: '';
+	position: absolute;
+	height: 3px;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	background-color: #82BEE3;
+	transition: 1s;
+
+}
+
+.wrap{
+	width: 500px;
+	height: auto;
+	padding: 25px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-around;
+	position: relative;
+	left: 100px;
+	color: #333;
+	
+}
+hr{
+	height: 120px;
+	border:none;
+}
+.wrap h1{
+	font-size: 28px;
+}
+.wrap p{
+	font-weight: 100;
+	line-height: 1.5;
+	margin: 20px 0;
+	font-size: 24px;
+}
+.wrap i{
+	font-size: 55px;
+	margin-bottom: 15px;
+}
+.wrap button{
+	border-radius: 25px;
+	padding: 5px 15px;
+	background: transparent;
+	color:000;
+	font-weight: 500;
+	font-size: 24px;
+	width: 50%;
+	margin-top: 20px;
+	outline: none;
+	border: none;
+	border:2px solid black;
+	position: relative;
+	text-transform: uppercase;
+	
+}
+
+i.fa-arrow-down{
+	position: absolute;
+	top: 12px;
+	right:  15px;
+	font-size: 16px;
+
+}
+.wrap button:hover{
+	transform: 0.5s;
+	background: #111;
+	color: #f2f2f2;
 }
